@@ -28,12 +28,11 @@ export const createcellsRouter = (
       const result = await fs.readFile(fullPath, { encoding: 'utf-8' });
       res.send(JSON.parse(result));
     } catch (error) {
-      console.log(error);
       if (error.code === 'ENOENT') {
         await fs.writeFile(fullPath, '[]', 'utf-8');
         res.send([]);
       } else {
-        console.log('Unhandled error', error);
+        throw error;
       }
     }
   });

@@ -23,7 +23,7 @@ export const serveCommand = new Command()
         );
       } catch (error) {
         if (error.code === 'EADDRINUSE') {
-          console.error('Port is in use. Try running on a different port. ');
+          console.error('Port is in use. Try running on a different port.');
         } else {
           console.log('Here is the problem', error.message);
         }
