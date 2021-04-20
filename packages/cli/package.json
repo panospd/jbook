@@ -1,6 +1,6 @@
 {
   "name": "codebook-cli",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "files": [
     "dist"
   ],
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@codebook-cli/local-client": "^1.0.0"
+    "@codebook-cli/local-client": "^2.0.0"
   },
   "devDependencies": {
-    "@codebook-cli/local-api": "^1.0.0",
+    "@codebook-cli/local-api": "^2.0.0",
     "@types/node": "^14.14.41",
     "commander": "^7.2.0",
     "esbuild": "0.8.26",
