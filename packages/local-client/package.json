@@ -1,8 +1,13 @@
 {
-  "name": "jbook",
+  "name": "@codebook-cli/local-client",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@monaco-editor/react": "3.7.5",
     "@testing-library/jest-dom": "^5.11.10",
@@ -19,6 +24,7 @@
     "@uiw/react-md-editor": "2.1.1",
     "axios": "0.21.1",
     "bulmaswatch": "^0.8.1",
+    "esbuild": "0.8.26",
     "esbuild-wasm": "0.8.27",
     "immer": "^9.0.1",
     "jscodeshift": "0.11.0",
@@ -40,7 +46,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
