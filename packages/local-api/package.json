@@ -7,7 +7,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": "dist/index.js",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
